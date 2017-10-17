@@ -1,0 +1,38 @@
+/*--------------------------------------------------------*\
+     INSTAGRAM FEED
+\*--------------------------------------------------------*/
+
+/**
+ * Comment
+ */
+
+.instagram-feed {
+	background: $black;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin-top: 4rem;
+
+	+ .main-footer {
+		margin-top: 0;
+	}
+
+	a {
+		float: left;
+		padding-right: $column_gutter;
+		padding-left: $column_gutter;
+		width: 100%;
+		width: (100/12)*6%;
+		display: block;
+		margin-bottom: 40px;
+		line-height: 0;
+
+		@include media(small) {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

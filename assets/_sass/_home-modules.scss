@@ -1,0 +1,30 @@
+// HOME MODULES
+
+.home-modules {
+	margin-bottom: 3.125rem;
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 1.25rem;
+		position: relative;
+		padding-bottom: .125rem;
+	}
+
+	// Projectes destacats
+	&__featured-projects {
+		padding: 1.25rem;
+		margin-bottom: 1.25rem;
+		border: 4px solid $black;
+	}
+
+	&__latest-posts {
+		padding: 1.25rem;
+		margin-bottom: 1.25rem;
+		border: 4px solid $black;
+	}
+
+	&__about {
+		padding: 1.25rem;
+		border: 4px solid $black;
+	}
+}

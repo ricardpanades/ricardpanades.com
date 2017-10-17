@@ -1,0 +1,37 @@
+//
+// PROJECT
+//
+
+.project {
+
+	&__intro {
+		margin-top: 0;
+	}
+
+	&__services {}
+
+		&__services-title {
+			margin-top: 1.25rem;
+			margin-bottom: 0;
+		}
+
+		&__services-list {
+			margin: 0;
+			padding: 0;
+		}
+
+			&__service {
+				display: inline-block;
+				background: $light_gray;
+				padding: .125em .375em;
+				font-size: .875em;
+				margin-top: .625rem;
+			}
+
+	.column--4 img,
+	.column--6 img,
+	p img {
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		margin-top: 2rem;
+	}
+}

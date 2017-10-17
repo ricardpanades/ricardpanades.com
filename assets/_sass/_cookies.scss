@@ -1,0 +1,24 @@
+.cc_banner {
+	font-size: .675em !important;
+	padding: .675em !important;
+	max-width: $wrapper_width !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+	background: $medium_gray !important;
+}
+
+.cc_message {
+	margin: 0 !important;
+	display: inline-block;
+	color: $black !important;
+	line-height: 2.5 !important;
+}
+
+.cc_btn {
+	background: $medium_gray !important;
+	border: 1px solid $black !important;
+	padding: .675em !important;
+	font-weight: bold !important;
+	border-radius: 2px !important;
+	color: $black !important;
+}

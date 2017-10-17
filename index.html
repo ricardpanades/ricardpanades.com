@@ -1,0 +1,49 @@
+---
+layout: default
+meta: Ricard Panadès Nadal - Disseny web i gràfic.
+title: Inici
+---
+
+<section class="home-intro">
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				<h2 class="home-intro__title site__title">
+					Ricard Panadès Nadal · Product Designer
+				</h2>
+				<p class="home-intro__presentation">
+					Dissenyo experiencies digitals web per a startups i negocis.
+				</p>
+				<a class="button button--transparent" href="{{site.baseurl}}/sobre-mi">Més sobre mi <span class="icon-arrow-right">➝</span></a>
+			</div>
+		</div>
+</section>
+
+<section class="projects-list wrapper">
+	<!-- <div class="row">
+		<div class="column">
+			<h1 class="site__title">{{ page.title }}</h1>
+		</div>
+	</div> -->
+
+	{% include projects-grid.html %}
+</section>
+
+<section class="wrapper">
+	<div class="row">
+		<div class="column">
+			{% include gear-banner.html %}
+		</div>
+	</div>
+</section>
+
+<!-- Instagram feed -->
+<section class="instagram-feed">
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				<div id="instagram"></div>
+			</div>
+		</div>
+	</div>
+</section>

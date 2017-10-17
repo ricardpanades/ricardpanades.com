@@ -1,0 +1,135 @@
+//
+// BROWSER
+//
+
+.browser {
+	width: 100%;
+	margin-top: 3.25rem;
+	margin-bottom: 3.25rem;
+	position: relative;
+
+	&__desktop {
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	}
+
+		&__top-bar {
+			border: 1px solid $black;
+			display: flex;
+			padding: 10px;
+			flex-wrap: nowrap;
+		}
+
+			&__buttons {
+				display: flex;
+				align-items: center;
+			}
+
+				&__button {
+					display: inline-block;
+					background: $black;
+					color: #fff;
+					border-radius: 999em;
+					line-height: 1;
+					width: 1.125em;
+					height: 1.125em;
+					text-align: center;
+					margin-left: 5px;
+
+					&:first-child { margin-left: 0; }
+				}
+
+				&__close {}
+
+				&__minimize {}
+
+				&__full-screen {}
+
+			&__nav-bar {
+				border: 1px solid $black;
+				padding: 5px 10px;
+				margin-left: 10px;
+				flex-grow: 2;
+			}
+
+				&__url {
+					font-size: .875em;
+				}
+
+		&__frame {
+			border: 1px solid $black;
+			border-top: 0;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			max-height: 720px;
+
+			// @include media(large) {
+			// 	height: 530px;
+			// }
+		}
+
+			&__website {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+
+	&__mobile {
+		position: absolute;
+		bottom: -10px;
+		right: 1.25rem;
+		width: 320px;
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		border-radius: 30px;
+
+		@include media(large) {
+			width: 220px;
+		}
+
+		@include media(medium) {
+			position: static;
+			margin: 3.25rem auto 0;
+		}
+	}
+
+		&__mobile-top {
+			border: 1px solid $black;
+			border-bottom: 0;
+			border-radius: 30px 30px 0 0;
+			height: 60px;
+			background: $black;
+		}
+
+		&__mobile-screen {
+			height: 460px;
+			border-right: 1px solid $black;
+			border-left: 1px solid $black;
+			border-top: 0;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			background: #fff;
+
+			@include media(large) {
+				height: 320px;
+			}
+		}
+
+		&__mobile-bottom {
+			height: 60px;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			border: 1px solid $black;
+			border-top: 0;
+			border-radius: 0 0 30px 30px;
+			background: $black;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border: 1px solid $black;
+				border-radius: 100%;
+			}
+		}
+}

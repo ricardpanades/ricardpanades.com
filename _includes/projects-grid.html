@@ -1,0 +1,15 @@
+<div class="row">
+	{% assign projects = site.portfolio | sort: 'order' | reverse %}
+	{% for project in projects %}
+		{% if project.visible %}
+			<div class="column column--half">
+				<a class="projects-list__project{% if project.featured %} projects-list__project--featured{% endif %}" href="{{ project.url }}" style=" background-image: url({{site.baseurl}}/assets/img/portfolio/{{project.thumbnail}});">
+					<!-- <div class="projects-list__color" style="background: linear-gradient(180deg, #{{ project.color-one }} 0%, #{{ project.color-two }} 100%);"></div> -->
+					<div class="projects-list__color" style="background: #{{ project.color-two }};"></div>
+
+					<h2 class="projects-list__project-title">{{ project.title }}</h2>
+				</a>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>

@@ -1,2 +1,2 @@
-# ricardpanades.com
-Personal portfolio
+# Repositori portfoli personal
+## ricardpanades.com

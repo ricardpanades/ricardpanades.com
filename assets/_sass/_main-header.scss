@@ -1,0 +1,26 @@
+//
+// MAIN HEADER
+//
+
+.main-header {
+	display: flex;
+	align-items: center;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
+	margin-bottom: 5rem;
+
+	@include media(small) {
+		margin-bottom: 2rem;
+	}
+
+	&__logo {
+		img {
+			max-height: 2.5em;
+		}
+	}
+
+	&__nav {
+		float: right;
+		margin-left: auto;
+	}
+}

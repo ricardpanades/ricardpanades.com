@@ -1,0 +1,51 @@
+.gear {
+	&__item {
+		height: 290px;
+		margin-bottom: 40px;
+		position: relative;
+		color: $primary;
+		transition: .3s ease;
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		border-radius: 4px;
+		top: 0;
+		display: block;
+		padding: 1.5rem 1.25rem;
+
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			color: $primary;
+			// background-size: 115%;
+			transition: .3s ease;
+			box-shadow: 0 17px 30px rgba(52,52,90,.1), 0 8px 14px rgba(0,0,0,.07);
+			top: -3px;
+		}
+
+		&:visited,
+		&:active {
+			color: $primary;
+		}
+	}
+
+	&__img {
+		max-width: 135px;
+	}
+
+	&__info {
+		margin-left: 1.25rem;
+	}
+
+		&__title {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		&__description {
+			font-size: .75em;
+		}
+
+		&__button {
+			font-size: .75em;
+		}
+}

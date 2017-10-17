@@ -1,0 +1,43 @@
+/*--------------------------------------------------------*\
+     MAIN NAV
+\*--------------------------------------------------------*/
+
+.main-nav {
+
+	&:hover {
+		.main-nav__item {
+			border-bottom: 2px solid transparent;
+		}
+	}
+
+	ul {
+		@include clearfix();
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		float: left;
+		list-style: none;
+	}
+
+	&__item {
+		padding: .125em 0;
+		text-decoration: none;
+		color: $black;
+		display: block;
+		margin-left: 1.25em;
+		border-bottom: 3px solid transparent;
+		font-weight: bold;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: 3px solid $black !important;
+		}
+
+
+		&--active {
+			border-bottom: 3px solid $black;
+		}
+	}
+}

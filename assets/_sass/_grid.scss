@@ -1,0 +1,70 @@
+//
+// GRID
+//
+
+$column_gutter: 20px;
+$wrapper_width: 64rem;
+
+.wrapper {
+	max-width: $wrapper_width;
+	width: 100%;
+	margin: 0 auto;
+
+	@include media(large) {
+		padding-right: $column_gutter;
+		padding-left: $column_gutter;
+	}
+}
+
+.content {
+	width: (100/12)*10%;
+	margin: 0 auto;
+}
+
+.row {
+	margin-right: -$column_gutter;
+	margin-left: -$column_gutter;
+	@include clearfix();
+}
+
+.column {
+	float: left;
+	padding-right: $column_gutter;
+	padding-left: $column_gutter;
+	width: 100%;
+
+	&--half,
+	&--6 {
+		width: (100/12)*6%;
+
+		@include media(small) {
+			width: 100%;
+		}
+	}
+
+	&--third,
+	&--4 {
+		width: (100/12)*4%;
+
+		@include media(small) {
+			width: 100%;
+		}
+	}
+
+	&--8 {
+		width: (100/12)*8%;
+
+		@include media(small) {
+			width: 100%;
+		}
+	}
+
+	&--right {
+		float: right;
+	}
+
+	&--center {
+		float: none;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,57 @@
+---
+# ricardpanades.com styles
+---
+
+
+
+
+// GENERAL VARIABLES
+$font: Helvetica, Arial, sans-serif;
+$body_font: Georgia, serif;
+
+$black: #080808;
+$light_black: #0D1B1E;
+
+$breaked_white: #FCFFF7;
+
+$light_gray: #f3f3f3;
+$medium_gray: #ccc;
+
+$orange: #FFD84F;
+$yellow: #ffef2d;
+$light_green: #4AB25A;
+
+$blue: #00f;
+$gray_blue: #3A506B;
+
+$primary: $black;
+
+// MIXINS
+@import "mixins/clearfix";
+@import "mixins/media";
+
+// GENERAL
+@import "normalize";
+@import "general";
+@import "main-nav";
+@import "grid";
+@import "button";
+@import "main-header";
+@import "main-footer";
+
+@import "home-modules";
+@import "post-list";
+@import "projects-list";
+@import "contact-page";
+@import "browser";
+@import "project";
+@import "cookies";
+@import "instagram-feed";
+@import "home-intro";
+@import "about";
+@import "gear";
+@import "gear-banner";
+
+
+
+

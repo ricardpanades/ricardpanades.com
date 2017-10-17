@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<div class="project">
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				<h1 class="site__title" style="background: -webkit-linear-gradient(45deg, #{{ page.color-one }} 0%, #{{ page.color-two }} 100%); -webkit-background-clip: text;">{{ page.title }}</h1>
+			</div>
+		</div>
+		{% if page.description %}
+			<div class="row">
+				<div class="column column--half column--right">
+					<div class="row">
+						<div class="column">
+							<p class="project__intro">{{ page.description }}</p>
+							{% if page.weburl and page.visitButton %}
+								<a href="{{ page.weburl }}" class="button">Visit the site <span class="icon-arrow-right">&#10141;</span></a>
+							{% endif %}
+						</div>
+					</div>
+
+					{% if page.services %}
+						<div class="row">
+							<div class="column">
+								<div class="project__services">
+									<h5 class="project__services-title ">Services</h5>
+									<ul class="project__services-list">
+										{% for service in page.services %}
+											<li class="project__service">{{ service }}</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		{% endif %}
+	</div>
+
+	{% if page.weburl and page.screenshot %}
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				<div class="browser">
+					<div class="browser__desktop">
+						<div class="browser__top-bar">
+							<div class="browser__buttons">
+								<div class="browser__button browser__close">&#215;</div>
+								<div class="browser__button browser__minimize">&#215;</div>
+								<div class="browser__button browser__full-screen">&#215;</div>
+							</div>
+							<div class="browser__nav-bar">
+								<span class="browser__url">{{ page.weburl }}</span>
+							</div>
+						</div>
+
+						<div class="browser__frame">
+							<img class="browser__website" src="{{site.url}}/assets/img/portfolio/{{page.screenshot}}" alt="">
+						</div>
+					</div>
+
+					{% if page.mobileScreenshot %}
+						<div class="browser__mobile">
+							<div class="browser__mobile-top"></div>
+							<div class="browser__mobile-screen">
+								<img class="browser__website" src="{{site.url}}/assets/img/portfolio/{{page.mobileScreenshot}}" alt="">
+							</div>
+							<div class="browser__mobile-bottom"></div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>

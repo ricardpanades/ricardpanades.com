@@ -1,0 +1,66 @@
+//
+// POST LIST (BLOG)
+//
+
+.post-list {
+	margin-bottom: 3.125rem;
+
+	&__data {
+		display: block;
+		// text-align: right;
+		color: $medium_gray;
+		font-size: .875em;
+	}
+
+	&__post {
+		margin-top: 3.125rem;
+
+		&:first-child { margin-top: 0; }
+	}
+
+	&__post-title {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		// a {
+		// 	color: $black;
+
+		// 	&:hover {
+		// 		color: $blue;
+		// 	}
+		// }
+	}
+
+	&__post-excerpt {
+		margin-top: .625rem;
+		margin-bottom: 0;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__read-more {
+		margin-top: .625rem;
+
+		.icon-arrow-right {
+			padding-right: 0;
+			transition: .3s ease;
+		}
+
+		&:hover {
+			.icon-arrow-right {
+				padding-left: .625rem;
+				transition: .3s ease;
+			}
+		}
+
+		// a {
+		// 	color: $black;
+
+		// 	&:hover {
+		// 		color: $blue;
+		// 	}
+		// }
+	}
+}
