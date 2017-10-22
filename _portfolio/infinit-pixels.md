@@ -4,7 +4,7 @@ title: Infinit Píxels
 thumbnail: infinitpixels/thumbnail.jpg
 screenshot: infinitpixels/thumbnail.jpg
 mobileScreenshot: infinitpixels/thumbnail.jpg
-weburl: http://infinitpixels.cat
+siteurl: http://infinitpixels.cat
 description: Proyecto personal sobre la creación de un blog de diseño y desarrollo web en catalán.
 visitButton: false
 services: [Diseño UX, Diseño UI, Front-End, WordPress]

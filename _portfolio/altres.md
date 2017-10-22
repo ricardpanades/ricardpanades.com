@@ -5,7 +5,7 @@ thumbnail: otros/thumbnail.jpg
 description: Recopilatorio de trabajos variados.
 
 order: 1
-visible: true
+visible: false
 ---
 
 <div class="row">

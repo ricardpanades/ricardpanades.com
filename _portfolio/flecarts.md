@@ -3,7 +3,7 @@ layout: portfoli
 title: FLECARTS
 thumbnail: flecarts/thumbnail.jpg
 screenshot: flecarts/home.png
-weburl: flecarts
+siteurl: flecarts
 description: Ejercicio personal sobre el diseño de la hipotética web de una panadería.
 services: [Diseño UX, Diseño UI, Diseño Gráfico]
 color-one: d06c1c

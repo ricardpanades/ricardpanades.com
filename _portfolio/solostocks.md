@@ -4,8 +4,8 @@ title: SoloStocks
 thumbnail: solostocks/thumbnail.jpg
 screenshot: solostocks/solostocks.png
 mobileScreenshot: solostocks/solostocks-mobile.png
-weburl: http://solostocks.com
-description: Actualment estic treballant en SoloStocks com Product designer.
+siteurl: http://solostocks.com
+description: SoloStocks és el portal web B2B més gran d'Espanya i amb presencia internacional.
 visitButton: true
 services: [Disseny UX, Disseny UI, HTML, SASS, Responsive]
 color-one: 1c7fc3

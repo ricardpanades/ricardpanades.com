@@ -13,12 +13,12 @@ body {
 p,
 span {
 	// font-family: $body_font;
-	line-height: 1.7;
+	line-height: 1.6;
 }
 
-p {
-	font-size: 1.25em;
-}
+// p {
+// 	font-size: 1.25em;
+// }
 
 h3 {
 	font-size: 1.75em;
@@ -40,6 +40,7 @@ img {
 	max-width: 100%;
 }
 
+a,
 .link {
 	text-decoration: none;
 	color: $black;
@@ -48,9 +49,13 @@ img {
 		background: none;
 	}
 
-	&:hover {
-		text-decoration: underline;
+	&:visited {
 		color: $black;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $blue;
 	}
 }
 
@@ -59,23 +64,22 @@ li {
 }
 
 .site {
-	font-size: 1.125em;
+	// font-size: 1.125em;
 
-	@include media(medium) {
-		font-size: 1em;
-	}
+	// @include media(medium) {
+	// 	font-size: 1em;
+	// }
 
 	@include media(small) {
 		font-size: .875em;
 	}
 
 	&__title {
-		font-size: 6em;
+		font-size: 4em;
 		line-height: 1;
 		margin-top: 0;
 		margin-bottom: 8rem;
 		position: relative;
-		font-family: serif;
 		display: inline-block;
 
 		// color: #5d2980;
@@ -84,19 +88,8 @@ li {
 		// -webkit-text-fill-color: transparent;
 
 		@include media(small) {
-			font-size: 5em;
+			font-size: 3em;
 			margin-bottom: 2rem;
-		}
-
-		&:after {
-			position: absolute;
-			display: block;
-			width: 100px;
-			height: 4px;
-			background: $black;
-			bottom: 0;
-			left: 0;
-			content: '';
 		}
 	}
 }

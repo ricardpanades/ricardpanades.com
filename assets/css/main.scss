@@ -6,10 +6,12 @@
 
 
 // GENERAL VARIABLES
-$font: Helvetica, Arial, sans-serif;
-$body_font: Georgia, serif;
+$font: 'Roboto', Arial, sans-serif;
+$body_font: $font;
+// $body_font: Georgia, serif;
 
 $black: #080808;
+$not_black: #777;
 $light_black: #0D1B1E;
 
 $breaked_white: #FCFFF7;

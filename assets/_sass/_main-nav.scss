@@ -22,18 +22,7 @@
 	}
 
 	&__item {
-		padding: .125em 0;
-		text-decoration: none;
-		color: $black;
-		display: block;
 		margin-left: 1.25em;
-		border-bottom: 3px solid transparent;
-		font-weight: bold;
-
-		&:hover {
-			text-decoration: none;
-			border-bottom: 3px solid $black !important;
-		}
 
 
 		&--active {

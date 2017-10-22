@@ -3,14 +3,14 @@ layout: portfoli
 title: Mariano Pagés
 thumbnail: marianopages/thumbnail.jpg
 screenshot: marianopages/home.png
-weburl: marianopages
+siteurl: marianopages
 description: Disseño web para el fotógrafo Mariano Pagès.
 services: [Disseny UX, Disseny UI]
 color-one: 3c7cc1
 color-two: 0d2844
 order: 7
 featured: false
-visible: true
+visible: false
 ---
 
 <div class="row">

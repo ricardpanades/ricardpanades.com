@@ -3,7 +3,7 @@ layout: portfoli
 title: ANC Palautordera
 thumbnail: ancpalautordera/thumbnail.jpg
 screenshot: ancpalautordera/screenshot.png
-weburl: http://ancpalautordera.cat
+siteurl: http://ancpalautordera.cat
 description: Página para la associación de l'Assamblea Nacional Catalana de Santa Maria y Sant Esteve de Palautordera.
 visitButton: true
 services: [Diseño UX, Diseño UI, HTML, CSS, WordPress]
