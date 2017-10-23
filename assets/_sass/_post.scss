@@ -1,0 +1,15 @@
+//
+// Post
+//
+
+.post {
+	a {
+		color: $blue;
+		text-decoration: underline;
+	}
+
+	p {
+		max-width: 40em;
+		margin: 3rem auto;
+	}
+}

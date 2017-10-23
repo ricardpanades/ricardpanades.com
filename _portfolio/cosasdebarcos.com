@@ -1,15 +1,15 @@
 ---
 layout: portfoli
-title: Boats Group
+title: Cosas De Barcos
 thumbnail:
 screenshot:
 mobileScreenshot:
-siteurl: http://boats.com
-description: Actualment treballant per Boats Group amb el projecte BOATS.
+siteurl: http://cosasdebarcos.com
+description: Portal lider a España de compra-venta de vaixells.
 visitButton: true
 services: [Disseny UX, Disseny UI, HTML, LESS, Responsive, eCommerce]
 year: 2017
-order: 13
+order: 12
 featured: true
 visible: true
 ---

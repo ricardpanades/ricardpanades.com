@@ -14,18 +14,20 @@ title: Blog
 	</div>
 
 	<div class="row">
-		<section class="post-list column column--8 column--right">
-			{% for post in site.posts %}
-				<article class="post-list__post">
-					<span class="post-list__data">{{ post.data }}</span>
-					<h2 class="post-list__post-title"><a class="link link--no-bg" href="{{ post.url }}">{{ post.title }}</a></h2>
-					<!-- <p class="post-list__post-excerpt">
-						<a href="{{ post.url }}">{{ post.excerpt }}</a>
-					</p> -->
-					<a class="post-list__read-more link" href="{{ post.url }}">Continuar llegint <span class="icon-arrow-right">&#10141;</span></a>
-				</article>
-			{% endfor %}
-		</section>
+		<div class="column">
+			<section class="post-list">
+				{% for post in site.posts %}
+					<article class="post-list__post">
+						<span class="post-list__data">{{ post.data }}</span>
+						<h2 class="post-list__post-title"><a class="link link--no-bg" href="{{ post.url }}">{{ post.title }}</a></h2>
+						<!-- <p class="post-list__post-excerpt">
+							<a href="{{ post.url }}">{{ post.excerpt }}</a>
+						</p> -->
+						<a class="post-list__read-more link" href="{{ post.url }}">Continuar llegint <span class="icon-arrow-right">&#10141;</span></a>
+					</article>
+				{% endfor %}
+			</section>
+		</div>
 	</div>
 </div>
 
