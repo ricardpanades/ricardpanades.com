@@ -1,0 +1,37 @@
+//
+// HOME INTRO
+//
+
+.home {
+
+	&__intro {
+		margin-top: 0;
+		margin-bottom: 6.25rem;
+
+		ul {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-left: 1.25rem;
+		}
+
+		&__hello {
+			font-size: .75em;
+		}
+
+		&__title {
+			margin-bottom: 0;
+		}
+
+		&__presentation {
+			font-size: 2em;
+			margin-top: 3rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+
+	&__latest-posts {
+		margin-top: 6.25rem;
+		margin-bottom: 6.25rem;
+	}
+}

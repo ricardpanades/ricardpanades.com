@@ -4,42 +4,43 @@ meta: Ricard Panadès Nadal - Disseny web i gràfic.
 title: Inici
 ---
 
-<section class="home-intro">
-	<div class="wrapper">
+<div class="home">
+	<section class="home__intro">
+		<div class="wrapper">
+			<div class="row">
+				<div class="column">
+					<h1 class="home-intro__presentation">Hola, em dic Ricard i dissenyo experiencies digitals web per a startups i negocis.
+					</h1>
+				</div>
+			</div>
+	</section>
+
+	<section class="home__projects-list projects-list wrapper">
+		<h2>Experiéncia</h2>
+		{% include latest-projects.html %}
+	</section>
+
+	<section class="home__latest-posts wrapper">
+		<h2><a href="{{site.baseurl}}/blog">Blog</a></h2>
+		{% include latest-posts.html %}
+	</section>
+
+	<!-- <section class="wrapper">
 		<div class="row">
 			<div class="column">
-				<h1 class="home-intro__presentation">Hola, em dic Ricard i dissenyo experiencies digitals web per a startups i negocis.
-				</h1>
+				{% include gear-banner.html %}
 			</div>
 		</div>
-</section>
+	</section> -->
 
-<section class="projects-list wrapper">
-	<!-- <div class="row">
-		<div class="column">
-			<h1 class="site__title">{{ page.title }}</h1>
-		</div>
-	</div> -->
-
-	<h2>Experiéncia</h2>
-	{% include projects-grid.html %}
-</section>
-
-<!-- <section class="wrapper">
-	<div class="row">
-		<div class="column">
-			{% include gear-banner.html %}
-		</div>
-	</div>
-</section> -->
-
-<!-- Instagram feed -->
-<!-- <section class="instagram-feed">
-	<div class="wrapper">
-		<div class="row">
-			<div class="column">
-				<div id="instagram"></div>
+	<!-- Instagram feed -->
+	<!-- <section class="instagram-feed">
+		<div class="wrapper">
+			<div class="row">
+				<div class="column">
+					<div id="instagram"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section> -->
+	</section> -->
+</div>

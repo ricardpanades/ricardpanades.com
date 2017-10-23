@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="column">
+		<ul class="latest-posts">
+			{% for post in site.posts %}
+				<li class="latest-posts__item">
+					<a href="{{ post.url }}"><h3 class="latest-posts__title">{{ post.title }}</h3><span class="latest-posts__date">– {{ post.data }}</span></a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
