@@ -1,0 +1,45 @@
+//
+// SOCIAL SHARE
+//
+
+.social-share {
+	padding: 1rem 0;
+	background: $light_gray;
+	position: relative;
+	max-width: 40em;
+	margin: 0 auto;
+
+	&:before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -999rem;
+		width: 999rem;
+		content: "";
+		background: $light_gray;
+	}
+
+	&__text {
+		margin: 0;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	&__social-list {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+
+		&__social-item {
+			display: inline-block;
+			list-style: none;
+			margin-right: 10px;
+		}
+
+			&__social-link {
+				.fa {
+					margin-right: 5px;
+				}
+			}
+}
