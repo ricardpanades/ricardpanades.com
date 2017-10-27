@@ -1,0 +1,18 @@
+//
+// ANIMATIONS (CSS3)
+//
+
+.animation-intro {
+	animation: animation-intro 1s;
+}
+
+@keyframes animation-intro {
+	0% {
+		opacity: 0;
+		transform: translateY($medium-space);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
