@@ -4,17 +4,21 @@
 
 .main-footer {
 	background: $light_gray;
-	padding-top: 3.125rem;
-	padding-bottom: 3.125rem;
-	margin-top: 10rem;
+	padding-top: $medium-space;
+	padding-bottom: $medium-space;
+	margin-top: $large-space;
+
+	@include media(small) {
+		margin-top: $medium-space;
+	}
 
 	&__title {
 		font-size: 1em;
 		margin-top: 0;
-		margin-bottom: .75em;
+		margin-bottom: $xsmall-space;
 
 		@include media(small) {
-			margin-top: 1rem;
+			margin-top: $small-space;
 		}
 	}
 

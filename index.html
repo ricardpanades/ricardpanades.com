@@ -4,26 +4,30 @@ meta: Ricard Panadès Nadal - Disseny web i gràfic.
 title: Inici
 ---
 
-<div class="home">
-	<section class="home__intro">
-		<div class="wrapper">
-			<div class="row">
-				<div class="column">
-					<h1 class="home-intro__presentation">Hola, em dic Ricard i dissenyo experiencies digitals web per a startups i negocis.
-					</h1>
-				</div>
-			</div>
-	</section>
+<div class="home wrapper">
+	<div class="row">
+		<div class="column">
+			<section class="home__intro">
+				<h1 class="home__intro-presentation">Hola, em dic Ricard i dissenyo experiencies digitals web per a startups i negocis.
+				</h1>
+			</section>
+		</div>
+	</div>
 
-	<section class="home__projects-list projects-list wrapper">
-		<h2>Experiència</h2>
-		{% include latest-projects.html %}
-	</section>
-
-	<section class="home__latest-posts wrapper">
-		<h2><a href="{{site.baseurl}}/blog">Blog</a></h2>
-		{% include latest-posts.html %}
-	</section>
+	<div class="row">
+		<div class="column column--half">
+			<section class="home__projects-list projects-list">
+				<h2>Experiència</h2>
+				{% include latest-projects.html %}
+			</section>
+		</div>
+		<div class="column column--half">
+			<section class="home__latest-posts">
+				<h2><a href="{{site.baseurl}}/blog">Blog</a></h2>
+				{% include latest-posts.html %}
+			</section>
+		</div>
+	</div>
 
 	<!-- <section class="wrapper">
 		<div class="row">

@@ -28,6 +28,13 @@ $gray_blue: #3A506B;
 
 $primary: $black;
 
+// Spacing (generally for margins)
+$xsmall-space: .75rem;
+$small-space: 1.25rem;
+$space: 2.5rem;
+$medium-space: 3.75rem;
+$large-space: 6.25rem;
+
 // MIXINS
 @import "mixins/clearfix";
 @import "mixins/media";
