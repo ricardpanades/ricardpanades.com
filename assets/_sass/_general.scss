@@ -70,10 +70,6 @@ li {
 	// 	font-size: 1em;
 	// }
 
-	@include media(small) {
-		font-size: .875em;
-	}
-
 	&__title {
 		font-size: 4em;
 		line-height: 1;
