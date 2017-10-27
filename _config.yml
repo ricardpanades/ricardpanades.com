@@ -46,3 +46,6 @@ collections:
     output: false
   gear-books:
     output: false
+  posts:
+    output: true
+    permalink: /blog/:title/
