@@ -33,7 +33,7 @@ exclude:
 sass:
   sass_dir: assets/_sass
   style: compressed
-permalink: pretty
+permalink: /:title/
 
 collections:
   portfolio:
