@@ -37,67 +37,40 @@ Gracias por leer mi código.
 	</head>
 
 	<body>
-	<div class="site">
-		<div class="wrapper">
-			<div class="row">
-				<div class="column">
-					<!-- MAIN HEADER -->
-					<header class="main-header">
-						<!-- logo -->
-						<a class="main-header__logo" href="{{site.baseurl}}/">RICARD PANADÈS</a>
+		<div class="site">
+			<div class="wrapper">
+				<div class="row">
+					<div class="column">
+						<!-- MAIN HEADER -->
+						<header class="main-header">
+							<!-- logo -->
+							<a class="main-header__logo" href="{{site.baseurl}}/">RICARD PANADÈS</a>
 
-						<!-- Main Nav -->
-						<div class="main-header__nav">
-							{% include main-nav.html %}
-						</div>
-					</header>
+							<!-- Main Nav -->
+							<div class="main-header__nav">
+								{% include main-nav.html %}
+							</div>
+						</header>
+					</div>
 				</div>
 			</div>
+
+
+
+			{{ content }}
+
+
+			<!-- FOOTER -->
+			{% include footer.html %}
+
 		</div>
 
+		{% if jekyll.environment == 'production' %}
+			{% include analytics.html %}
+		{% endif %}
 
-
-		{{ content }}
-
-
-		<!-- FOOTER -->
-		{% include footer.html %}
-
-	</div>
-
-	<!-- Instafeed -->
-	<!-- <script type="text/javascript" src="{{site.baseurl}}/assets/js/instafeed.js"></script> -->
-
-	<!-- Heap Analytics -->
-	<!-- <script type="text/javascript">
-	    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-	      heap.load("3740712706");
-	</script> -->
-
-	<!-- Instafeed -->
-	<!-- <script type="text/javascript">
-		var feed = new Instafeed({
-			get: 'user',
-			userId: 347351221,
-			accessToken: '347351221.6bdc539.63fc4dece4b0497fb4505d9f5fa3edfb',
-			target: 'instagram',
-			resolution: 'standard_resolution'
-		});
-		feed.run();
-	</script> -->
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44781467-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-44781467-1');
-	</script>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</body>
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </html>
