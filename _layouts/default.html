@@ -34,6 +34,9 @@ Gracias por leer mi código.
 		<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script> -->
 		<!-- End Cookie Consent plugin -->
 
+		{% if jekyll.environment == 'production' %}
+			{% include analytics.html %}
+		{% endif %}
 	</head>
 
 	<body>
@@ -64,10 +67,6 @@ Gracias por leer mi código.
 			{% include footer.html %}
 
 		</div>
-
-		{% if jekyll.environment == 'production' %}
-			{% include analytics.html %}
-		{% endif %}
 
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
