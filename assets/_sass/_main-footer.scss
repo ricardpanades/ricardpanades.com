@@ -6,7 +6,7 @@
 	background: $light_gray;
 	padding-top: $medium-space;
 	padding-bottom: $medium-space;
-	margin-top: $large-space;
+	margin-top: $medium-space;
 
 	@include media(small) {
 		margin-top: $medium-space;

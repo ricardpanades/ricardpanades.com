@@ -1,9 +1,11 @@
 body {
 	color: $black;
 	font-family: $font;
-	letter-spacing: .5px;
 	box-sizing: border-box;
 	line-height: 1.4;
+
+	text-rendering: optimizeLegibility!important;
+	-webkit-font-smoothing: antialiased!important;
 
 	* {
 		box-sizing: border-box;

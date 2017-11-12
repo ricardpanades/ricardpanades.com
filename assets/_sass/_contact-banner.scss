@@ -1,0 +1,25 @@
+//
+// CONTACT BANNER
+//
+
+.contact-banner {
+	padding: $xxsmall-space $xsmall-space;
+	background: $xlight_blue;
+	border-radius: 4px;
+	margin-top: $medium-space;
+	color: $xdark_blue;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	&__text {
+		margin: $xxsmall-space 0;
+	}
+
+	&__button {
+		margin-left: auto;
+	}
+}

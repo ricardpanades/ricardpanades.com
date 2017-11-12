@@ -19,16 +19,25 @@ $breaked_white: #FCFFF7;
 $light_gray: #f3f3f3;
 $medium_gray: #ccc;
 
-$orange: #FFD84F;
+// $orange: #FFD84F;
+$orange: #FFA60B;
 $yellow: #ffef2d;
 $light_green: #4AB25A;
 
-$blue: #00f;
+
+$blue: #2176FF;
+$xlight_blue: mix(white, $blue, 85%);
+$light_blue: mix(white, $blue, 60%);
+$dark_blue: mix(black, $blue, 20%);
+$xdark_blue: mix(black, $blue, 50%);
+
 $gray_blue: #3A506B;
 
 $primary: $black;
 
 // Spacing (generally for margins)
+$xxxsmall-space: .25rem;
+$xxsmall-space: .5rem;
 $xsmall-space: .75rem;
 $small-space: 1.25rem;
 $space: 2.5rem;
@@ -65,6 +74,7 @@ $large-space: 6.25rem;
 @import "post";
 @import "latest-posts";
 @import "social-share";
+@import "contact-banner";
 
 
 
