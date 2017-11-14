@@ -3,21 +3,23 @@
 //
 
 .social-share {
-	padding: 1rem 0;
+	padding: $small-space;
 	background: $light_gray;
 	position: relative;
 	max-width: 40rem;
 	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: $space;
 
-	&:before {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: -999rem;
-		width: 999rem;
-		content: "";
-		background: $light_gray;
-	}
+	// &:before {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: -999rem;
+	// 	width: 999rem;
+	// 	content: "";
+	// 	background: $light_gray;
+	// }
 
 	&__text {
 		margin: 0;

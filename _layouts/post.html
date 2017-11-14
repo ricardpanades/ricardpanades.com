@@ -6,8 +6,13 @@ layout: default
 	<div class="row">
 		<div class="column">
 			<section class="post">
+				{% if page.featured-img %}
+				<div class="post__featured-img" style="background-image:url({{page.featured-img}})"></div>
+				{% endif %}
 				<h1 class="post__title">{{ page.title }}</h1>
 				{{ content }}
+
+				<span class="post__date-published">Publicat el {{ page.data }}</span>
 			</section>
 		</div>
 	</div>
@@ -17,4 +22,12 @@ layout: default
 			{% include social-share.html %}
 		</div>
 	</div>
+
+	<!-- <div class="row">
+		<div class="column">
+			<div class="site__cmc">
+				{% include profile-card.html %}
+			</div>
+		</div>
+	</div> -->
 </div>

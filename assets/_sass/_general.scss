@@ -75,8 +75,8 @@ li {
 	&__title {
 		font-size: 4em;
 		line-height: 1;
-		margin-top: 0;
-		margin-bottom: 8rem;
+		margin-top: $large-space;
+		margin-bottom: 0;
 		position: relative;
 		display: inline-block;
 
@@ -89,5 +89,10 @@ li {
 			font-size: 3em;
 			margin-bottom: 2rem;
 		}
+	}
+
+	&__cmc {
+		max-width: 40rem;
+		margin: 0 auto;
 	}
 }

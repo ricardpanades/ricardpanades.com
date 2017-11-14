@@ -1,0 +1,20 @@
+//
+// PROFILE CARD
+//
+
+.profile-card {
+	@include clearfix();
+	border: 1px solid $medium_gray;
+	padding: $small-space;
+	border-radius: 4px;
+	margin-top: $space;
+
+	&__avatar {
+		width: 100px;
+		height: 100px;
+		float: left;
+		border: 1px solid $medium_gray;
+		border-radius: 9999rem;
+		overflow: hidden;
+	}
+}
