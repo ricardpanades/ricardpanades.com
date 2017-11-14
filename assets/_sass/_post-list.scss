@@ -7,7 +7,6 @@
 
 	&__data {
 		display: block;
-		// text-align: right;
 		color: $medium_gray;
 		font-size: .875em;
 	}
@@ -18,17 +17,21 @@
 		&:first-child { margin-top: 0; }
 	}
 
+	&__featured-img {
+		max-height: 300px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__content {
+		padding: $small-space;
+	}
+
 	&__post-title {
 		margin-top: 0;
 		margin-bottom: 0;
-
-		// a {
-		// 	color: $black;
-
-		// 	&:hover {
-		// 		color: $blue;
-		// 	}
-		// }
 	}
 
 	&__post-excerpt {

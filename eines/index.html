@@ -13,19 +13,19 @@ title: Les meves eines
 
 	<div class="row">
 		<div class="column">
-			<h2>General</h2>
+			<h2 class="gear__title">General</h2>
 		</div>
 
 		{% assign gears = site.gear-general | sort: 'order' %}
 		{% for gear in gears %}
 			{% if gear.visible %}
-				<div class="column column--half">
+				<div class="column column--half column--fw-medium">
 					<a class="gear__item" href="{{ gear.link }}">
 						<img class="gear__img" src="{{ gear.img }}">
 						<div class="gear__info">
-							<h4 class="gear__title">{{ gear.title }}</h4>
+							<h4 class="gear__item-title">{{ gear.title }}</h4>
 							<p class="gear__description">{{ gear.description }}</p>
-							<span class="gear__button button button--transparent">Veure a amazon <span class="icon-arrow-right">➝</span></span>
+							<span class="gear__button link link--arrow">Veure a amazon <span class="icon-arrow-right">➝</span></span>
 						</div>
 					</a>
 				</div>
@@ -35,19 +35,19 @@ title: Les meves eines
 
 	<div class="row">
 		<div class="column">
-			<h2>Fotografía y Video</h2>
+			<h2 class="gear__title">Fotografía y Video</h2>
 		</div>
 
 		{% assign gears = site.gear-photo-and-video | sort: 'order' %}
 		{% for gear in gears %}
 			{% if gear.visible %}
-				<div class="column column--half">
+				<div class="column column--half column--fw-medium">
 					<a class="gear__item" href="{{ gear.link }}">
 						<img class="gear__img" src="{{ gear.img }}">
 						<div class="gear__info">
-							<h4 class="gear__title">{{ gear.title }}</h4>
+							<h4 class="gear__item-title">{{ gear.title }}</h4>
 							<p class="gear__description">{{ gear.description }}</p>
-							<span class="gear__button button button--transparent">Veure a amazon <span class="icon-arrow-right">➝</span></span>
+							<span class="gear__button link link--arrow">Veure a amazon <span class="icon-arrow-right">➝</span></span>
 						</div>
 					</a>
 				</div>
@@ -57,19 +57,19 @@ title: Les meves eines
 
 	<div class="row">
 		<div class="column">
-			<h2>Aplicaciones y servicios</h2>
+			<h2 class="gear__title">Aplicaciones y servicios</h2>
 		</div>
 
 		{% assign gears = site.gear-tools | sort: 'order' %}
 		{% for gear in gears %}
 			{% if gear.visible %}
-				<div class="column column--half">
+				<div class="column column--half column--fw-medium">
 					<a class="gear__item" href="{{ gear.link }}">
 						<img class="gear__img" src="{{ gear.img }}">
 						<div class="gear__info">
-							<h4 class="gear__title">{{ gear.title }}</h4>
+							<h4 class="gear__item-title">{{ gear.title }}</h4>
 							<p class="gear__description">{{ gear.description }}</p>
-							<span class="gear__button button button--transparent">Veure més <span class="icon-arrow-right">➝</span></span>
+							<span class="gear__button link link--arrow">Veure més <span class="icon-arrow-right">➝</span></span>
 						</div>
 					</a>
 				</div>

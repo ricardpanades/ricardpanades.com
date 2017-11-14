@@ -67,4 +67,10 @@ $wrapper_width: 55rem;
 		float: none;
 		margin: 0 auto;
 	}
+
+	&--fw-medium {
+		@include media(medium) {
+			width: 100%;
+		}
+	}
 }

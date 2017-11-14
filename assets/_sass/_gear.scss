@@ -1,7 +1,15 @@
 .gear {
+
+	&__title {
+		margin-top: $space;
+	}
+
 	&__item {
-		height: 290px;
-		// margin-bottom: 40px;
+		height: 200px;
+		// border: 1px solid $medium_gray;
+		border-radius: 4px;
+		margin-bottom: 40px;
+		padding: $small-space;
 		position: relative;
 		color: $primary;
 		// transition: .3s ease;
@@ -22,6 +30,11 @@
 		// 	top: -3px;
 		// }
 
+		@include media(medium) {
+			margin-bottom: $small-space;
+		}
+
+		&:hover,
 		&:visited,
 		&:active {
 			color: $primary;
@@ -29,14 +42,14 @@
 	}
 
 	&__img {
-		max-width: 135px;
+		max-width: 125px;
 	}
 
 	&__info {
-		margin-left: 1.25rem;
+		margin-left: $small-space;
 	}
 
-		&__title {
+		&__item-title {
 			margin-top: 0;
 			margin-bottom: 0;
 		}

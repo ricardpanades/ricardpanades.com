@@ -59,6 +59,17 @@ a,
 		text-decoration: none;
 		color: $blue;
 	}
+
+	&--arrow {
+		font-weight: bold;
+
+		&:hover {
+			.icon-arrow-right {
+				padding-left: .625rem;
+				transition: .3s ease;
+			}
+		}
+	}
 }
 
 li {
