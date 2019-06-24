@@ -11,7 +11,7 @@ $body_font: $font;
 // $body_font: Georgia, serif;
 
 $black: #080808;
-$not_black: #777;
+$not_black: #5b5b5b;
 $light_black: #0D1B1E;
 
 $breaked_white: #FCFFF7;
@@ -24,6 +24,12 @@ $orange: #FFA60B;
 $yellow: #ffef2d;
 $light_green: #4AB25A;
 
+$purple: #7443ab;
+$xlight_purple: mix(white, $purple, 85%);
+$light_purple: mix(white, $purple, 60%);
+$dark_purple: mix(black, $purple, 20%);
+$xdark_purple: mix(black, $purple, 50%);
+
 
 $blue: #2176FF;
 $xlight_blue: mix(white, $blue, 85%);
@@ -33,7 +39,9 @@ $xdark_blue: mix(black, $blue, 50%);
 
 $gray_blue: #3A506B;
 
-$primary: $black;
+$primary: $purple;
+$headings-color: $black;
+$text-color: $not_black;
 
 // Spacing (generally for margins)
 $xxxsmall-space: .25rem;
@@ -62,20 +70,22 @@ $large-space: 6.25rem;
 @import "post-list";
 @import "projects-list";
 @import "contact-page";
-@import "browser";
 @import "project";
 @import "cookies";
 @import "instagram-feed";
 @import "home";
 @import "blog";
 @import "about";
-@import "gear";
-@import "gear-banner";
 @import "post";
 @import "latest-posts";
 @import "social-share";
 @import "contact-banner";
 @import "profile-card";
+
+// COMPONENTS
+@import "components/my-design-process-card";
+@import "components/page";
+@import "components/alert";
 
 
 

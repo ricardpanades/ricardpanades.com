@@ -1,0 +1,27 @@
+//
+// ALERT
+//
+
+.alert {
+	padding: 1em;
+	border: 1px solid $not_black;
+	margin-top: $xsmall-space;
+
+	&__heading {
+		font-size: 1.25em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	&__content {
+		font-size: 0.875em;
+
+		p {
+			margin-top: $xxxsmall-space;
+
+			& + p {
+				margin-top: $xxsmall-space;
+			}
+		}
+	}
+}

@@ -5,34 +5,27 @@ title: Inici
 id: index
 ---
 
-<div class="home wrapper">
-	<div class="row">
-		<div class="column">
-			<section class="home__intro">
-				<h1 class="home__intro-presentation">Hola, em dic Ricard i dissenyo experiencies digitals web per a startups i negocis.
-				</h1>
-			</section>
+<div class="home ">
+	<div class="wrapper">
+		<div class="row">
+			<div class="column">
+				<section class="home__intro">
+					<h1 class="home__intro-presentation">Hello! I'm Ricard, a designer (UX, UI, HTML, CSS) from Barcelona.</h1>
+					<a href="{{site.baseurl}}/my-design-process" class="home__intro-button button">See my design process</a>
+				</section>
+			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="column column--half">
-			<section class="home__projects-list projects-list">
-				<h2>Experiència</h2>
-				{% include latest-projects.html %}
-			</section>
-		</div>
-		<div class="column column--half">
-			<section class="home__latest-posts">
-				<h2><a href="{{site.baseurl}}/blog">Blog</a></h2>
-				{% include latest-posts.html %}
-			</section>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="column">
-			{% include contact-banner.html %}
+	<div class="home__work">
+		<div class="wrapper">
+			<div class="row">
+				<div class="column">
+					<section class="home__work-list work-list">
+						{% include work.html %}
+					</section>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

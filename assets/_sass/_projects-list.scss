@@ -2,6 +2,8 @@
 // PROJECTS-LIST
 //
 .projects-list {
+	margin-top: $space;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -13,64 +15,56 @@
 
 	&__project {
 		display: block;
-		margin-top: 1rem;
+		margin-top: $medium-space;
+		text-decoration: none;
+
+		&:hover {
+			.projects-list__project-title {
+				color: $primary;
+			}
+		}
 	}
+
+	&__project-img-wrapper {
+		padding-top: 55%;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.1s ease-in-out;
+		top: 0;
+
+		&:hover {
+			top: -4px;
+			box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.25);
+		}
+	}
+
+		&__project-img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			width: 100%;
+			min-height: 100%;
+			vertical-align: middle;
+			margin: auto;
+		}
 
 	&__project-title {
 		font-size: 1.25em;
-		font-weight: bold;
-		display: inline;
+		// font-weight: bold;
+		margin-top: $xxsmall-space;
+		color: $black;
 	}
 
 	&__short-description {
-		font-size: 1.25em;
-		display: inline;
-		color: $not_black;
-		font-weight: normal;
+		font-size: 1em;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
-
-	// Promo contact
-	&__promo-contact {
-		display: flex;
-		opacity: 0;
-		align-items: center;
-		color: $black;
-		height: 250px;
-		transition: .3s ease;
-
-		@include media(large) {
-			opacity: 1;
-		}
-
-		@include media(medium) {
-			height: 200px;
-		}
-
-		@include media(small) {
-			height: 150px;
-		}
-
-		&:hover {
-			opacity: 1;
-			transition: .3s ease;
-			color: $black;
-		}
-	}
-
-	&__promo-contact-go {
-		// color: $blue;
-
-		.icon-arrow-right {
-			padding-right: 0;
-			transition: .3s ease;
-		}
-
-		&:hover {
-			.icon-arrow-right {
-				padding-left: .625rem;
-				transition: .3s ease;
-			}
-		}
+	&__view-more {
+		margin-top: 0;
+		font-size: 1em;
 	}
 }

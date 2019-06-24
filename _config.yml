@@ -37,16 +37,9 @@ sass:
 permalink: /:title/
 
 collections:
-  portfolio:
+  projects:
     output: true
-  gear-general:
-    output: false
-  gear-photo-and-video:
-    output: false
-  gear-tools:
-    output: false
-  gear-books:
-    output: false
+    permalink: /work/:title/
   posts:
     output: true
     permalink: /blog/:title/

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+	<div class="row">
+		<div class="column">
+			<section class="page">
+				{% if page.img-big %}
+				<div class="page__featured-img" style="background-image:url({{page.img-big}})"></div>
+				{% endif %}
+
+				<div class="content">
+					<h1 class="page__title"><a class="page__title-link" href="{{page.project-link}}">{{ page.title }}</a></h1>
+
+					{% include work-in-progress.html %}
+
+					{% if page.nda %}
+						{% include nda-message.html %}
+					{% endif %}
+
+					{{ content }}
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

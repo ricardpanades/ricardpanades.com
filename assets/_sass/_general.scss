@@ -16,23 +16,37 @@ p,
 span {
 	// font-family: $body_font;
 	line-height: 1.6;
+	font-size: 1.25em;
+	color: $text-color
 }
 
-// p {
-// 	font-size: 1.25em;
-// }
+h1 {
+	font-size: 3.25em;
+	margin-top: $medium-space;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: $medium-space;
+	margin-bottom: 0;
+}
 
 h3 {
-	font-size: 1.75em;
+	font-size: 1.5em;
+	margin-top: $small-space;
+	margin-bottom: 0;
 }
 
 h4 {
 	font-size: 1.375em;
+	margin-top: $small-space;
+	margin-bottom: 0;
 }
 
-a {
-	text-decoration: none;
-}
+// a {
+// 	text-decoration: none;
+// }
 
 figure {
 	margin: 0;
@@ -44,20 +58,19 @@ img {
 
 a,
 .link {
-	text-decoration: none;
-	color: $black;
+	color: $primary;
 
 	&--no-bg {
 		background: none;
 	}
 
 	&:visited {
-		color: $black;
+		color: $primary;
 	}
 
 	&:hover {
 		text-decoration: none;
-		color: $blue;
+		color: $primary;
 	}
 
 	&--arrow {
@@ -84,17 +97,12 @@ li {
 	// }
 
 	&__title {
-		font-size: 4em;
+		font-size: 3.25em;
 		line-height: 1;
 		margin-top: $large-space;
 		margin-bottom: 0;
 		position: relative;
 		display: inline-block;
-
-		// color: #5d2980;
-		// background: -webkit-linear-gradient(45deg, rgba(255,69,168,1) 0%, rgba(93,41,128,1) 100%);
-		// -webkit-background-clip: text;
-		// -webkit-text-fill-color: transparent;
 
 		@include media(small) {
 			font-size: 3em;
