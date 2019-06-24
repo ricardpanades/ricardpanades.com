@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="projects-list">
+		<ul>
+			{% assign projects = site.projects | sort: 'order' %}
+			{% for project in projects %}
+				<li class="column column--half">
+					<a class="projects-list__project{% if project.featured %} projects-list__project--featured{% endif %}" href="{{ project.url }}">
+						<div class="projects-list__project-img-wrapper"><img src="{{project.img}}" alt="{{project.title}} image" class="projects-list__project-img"></div>
+						<h2 class="projects-list__project-title">{{ project.title }}</h2>
+						<p class="projects-list__short-description">{{ project.description }}</p>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

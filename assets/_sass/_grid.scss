@@ -17,8 +17,13 @@ $wrapper_width: 55rem;
 }
 
 .content {
-	width: (100/12)*10%;
+	max-width: 40rem;
 	margin: 0 auto;
+
+	&__full {
+		margin-left: -5rem;
+		margin-right: -5rem;
+	}
 }
 
 .row {
